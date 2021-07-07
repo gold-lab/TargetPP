@@ -7,8 +7,8 @@
 integrate_screens(datapath, infofile, inputformat = "CASPR", plot = TRUE)
 }
 \arguments{
-\item{datapath}{a character string indicating the path to the CRISPR
-single-screen results.}
+\item{datapath}{a character string indicating the path to the folder
+containing all CRISPR single-screen results.}
 
 \item{infofile}{a character string indicating the path to the CRISPR
 single-screen infofile.}
@@ -25,9 +25,4 @@ data.frame
 \code{integrate_screens} integrates all CRISPR single-screen results in
 \code{datapath} and returns a single target-ranking, based on significance
 and effect size.
-}
-\examples{
-datapath <- ""
-infofile <- ""
-integration_result <- integrate_screens(datapath, infofile)
 }
