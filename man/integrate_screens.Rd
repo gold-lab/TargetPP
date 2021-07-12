@@ -4,7 +4,13 @@
 \alias{integrate_screens}
 \title{CRISPR multi-screen integration}
 \usage{
-integrate_screens(datapath, infofile, inputformat = "CASPR", plot = TRUE)
+integrate_screens(
+  datapath,
+  infofile,
+  inputformat = "CASPR",
+  plot = TRUE,
+  RRAexact = TRUE
+)
 }
 \arguments{
 \item{datapath}{a character string indicating the path to the folder
@@ -17,6 +23,9 @@ single-screen infofile.}
 data. One of "CASPR" (default), or "MAGeCK".}
 
 \item{plot}{logical. Should summary plots be generated automatically?}
+
+\item{RRAexact}{logical. When `TRUE` the RRA algorithm uses their "exact"
+method to correct the p-value. Otherwise Bonferroni correction is applied.}
 }
 \value{
 data.frame
