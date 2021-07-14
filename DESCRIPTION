@@ -1,7 +1,7 @@
 Package: TargetPP
 Type: Package
 Title: CRISPR multi-screen integration to prioritize multi-phenotype targets
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person("Dominik", "Meise", email = "dominik.meise@protonmail.com", role = c("aut", "cre"))
 Description: This target prioritization pipeline (TPP, TargetPP) combines existing statistical methods
     to integrate multiple CRISPR screens into a single ranking to prioritize targets based on their

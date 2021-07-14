@@ -7,8 +7,9 @@
 integrate_screens(
   datapath,
   infofile,
-  inputformat = "CASPR",
-  plot = TRUE,
+  input_format = "CASPR",
+  extra_info = FALSE,
+  plot = FALSE,
   RRAexact = TRUE
 )
 }
@@ -19,13 +20,18 @@ containing all CRISPR single-screen results.}
 \item{infofile}{a character string indicating the path to the CRISPR
 single-screen infofile.}
 
-\item{inputformat}{a character string indicating the format of the input
-data. One of "CASPR" (default), or "MAGeCK".}
+\item{input_format}{a character string indicating the format of the input
+data. Must be one of "CASPR" (default), or "MAGeCK".}
+
+\item{extra_info}{logical. When `FALSE` (default) only the adjusted P-value
+is returned. Setting this to `TRUE` adds columns for each intermediary
+value to the returned data.frame.}
 
 \item{plot}{logical. Should summary plots be generated automatically?}
 
-\item{RRAexact}{logical. When `TRUE` the RRA algorithm uses their "exact"
-method to correct the p-value. Otherwise Bonferroni correction is applied.}
+\item{RRAexact}{logical. When `TRUE` (default) the RRA algorithm uses its
+"exact" method to correct the p-value. Otherwise Bonferroni correction is
+applied.}
 }
 \value{
 data.frame
@@ -33,5 +39,5 @@ data.frame
 \description{
 \code{integrate_screens} integrates all CRISPR single-screen results in
 \code{datapath} and returns a single target-ranking, based on significance
-and effect size.
+and effect size across all input screens.
 }
