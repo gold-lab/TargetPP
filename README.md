@@ -4,6 +4,7 @@
 # TargetPP
 
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/469789085.svg)](https://zenodo.org/badge/latestdoi/469789085)
 <!-- badges: end -->
 
 CRISPR multi-screen integration to prioritize multi-phenotype targets
